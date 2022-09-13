@@ -5,20 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 3 - CSS</title>
-    <link rel="stylesheet" href="exemplo3.css">
+    <style>
+        h1{
+            color: beige;
+            font-size: 72px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input{
+            display: block;
+            border-radius: 6px;
+        }
+
+        label{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .tracejado{
+            border: dotted;
+            background-color: antiquewhite;
+        }
+
+        #campo_email{
+            height: 80px;
+        }
+
+        #box_exemplo{
+            height: 400px;
+            width: 400px;
+            background-color: #8a2be220;
+            position: absolute;
+            top: 0px;
+            z-index: 1;
+        }
+
+        #formulario{
+            display: block;
+            z-index: 2;
+            position: absolute;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Exemplo 3 - CSS</h1>
 
-    <form action="" method="post"></form>
+    <form id="formulario" action="" method="post"></form>
     <label>Nome</label>
     <input type="text" name="nome">
 
-    <label>Nome</label>
-    <input type="email" name="email">
+    <label>E-mail</label>
+    <input class="tracejado" id="campo_email" type="email" name="email">
 
-    <label>Nome</label>
-    <input type="password" name="senha">
+    <label>Senha</label>
+    <input class="tracejado" type="password" name="senha">
+
+    <div id="box_exemplo" ></div>
 
 </body>
 </html>
