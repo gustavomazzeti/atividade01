@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs básicos</title>
+    <style>
+        section {
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h1>Inputs básicos</h1>
+</section>
+
+<section>
+  <form action="https://ferasdatecnologia.club.hotmart.com/t/page/RONlRjjAeP?keep_watching=true" method="post">
+
+    <label>Nome</label>
+    <br>
+    <input placeholder="Insira o seu nome" type="text" name="nome" class="" id=""><br>
+    <br>
+
+    <label>Senha</label>
+    <br>
+    <input placeholder="Insira a sua senha" type="password" name="senha"/><br>
+    <br>
+
+    <label>Time</label><br>
+    <input type="text" placeholder="Insira o seu time" name="Time" list="lista_de_times"/>
+    <datalist id="lista_de_times">
+        <option value="Corinthians"></option>
+        <option value="São Paulo"></option>
+        <option value="Palmeiras"></option>
+        <option value="Santos"></option>
+    </datalist><br>
+    <br>
+
+    <div>
+    <label>Opções</label>
+    <br>
+    <input type="radio" name="Opção A">A
+    <input type="radio" name="Opção B">B
+    <input type="radio" name="Opção C">C<br>
+    <br>
+    </div>
+
+    <label>Múltipla escolha</label>
+    <br>
+    <input type="checkbox" name="Opção 1">1
+    <input type="checkbox" name="Opção 2">1
+    <input type="checkbox" name="Opção 3">1<br>
+    <br>
+
+    <hr>
+
+    <label>Textarea</label>    
+    <br>
+    <textarea name="Texto" id="" cols="60" rows="10"></textarea><br>
+    <br>
+
+    <label>Arquivo</label>
+    <br>
+    <input type="file"><br>
+    <br>
+
+    <label>Gênero</label>
+    <br>
+    <select name="Gênero" id="">
+        <option selected value="">Selecione</option>
+        <option value="Homem">Homem</option>
+        <option value="Mulher">Mulher</option>
+    </select><br>
+    <br>
+
+    <label>Profissão por setor</label>
+    <br>
+    <select name="Profissão" id="">
+        <optgroup label="TI">
+        <option value="Desenvolvedor front end">Desenvolvedor front end</option>
+        <option value="Desenvolvedor front end">Desenvolvedor back end</option>
+        <option value="Desenvolvedor front end">Desenvolvedor full stack</option>
+       </optgroup>
+       <optgroup label="Marketing">
+        <option value="Estrategista de conteúdo">Estrategista de conteúdo</option>
+        <option value="Gestor de tráfego">Gestor de tráfego</option>
+        <option value="Videomaker">Videomaker</option>
+        </optgroup>
+    </select><br>
+    <br>
+
+    <input type="button" value="Botão sem ação"><br>
+    <br>
+
+    <input type="submit" value="Enviar"><br>
+    <br>
+
+  </form>
+</section>
+
+</body>
+</html>
